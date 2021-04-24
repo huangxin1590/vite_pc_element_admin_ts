@@ -1,0 +1,17 @@
+@mixin g-color() {
+  #theme-custom & {
+    color: $g--primary;
+  }
+}
+
+@mixin g-borderColor() {
+  #theme-custom & {
+    border-color: $g--primary;
+  }
+}
+
+@mixin g-bgColor() {
+  #theme-custom & {
+    background-color: $g--primary;
+  }
+}

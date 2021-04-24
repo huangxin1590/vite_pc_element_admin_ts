@@ -1,0 +1,48 @@
+// @import './var.scss';
+// @import './theme.scss';
+// @import './mixin.scss';
+
+$g--primary: #0c3768;
+// #3d5f86
+
+:export {
+  primaryColor: $g--primary;
+}
+
+/* 省略号 */
+@mixin rowEllopsis($line: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+/* 
+  display:flex 
+  $direction: row | culunm 
+*/
+@mixin flexCenter($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin g-color() {
+  #theme-custom & {
+    color: $g--primary;
+  }
+}
+
+@mixin g-borderColor() {
+  #theme-custom & {
+    border-color: $g--primary;
+  }
+}
+
+@mixin g-bgColor() {
+  #theme-custom & {
+    background-color: $g--primary;
+  }
+}

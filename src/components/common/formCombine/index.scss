@@ -1,0 +1,28 @@
+.test-render {
+  background-color: red;
+}
+
+>>> .el-form {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  .action-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+>>> .el-form-item {
+  .el-form-item__content {
+    width: 200px;
+    .el-date-editor.el-input {
+      width: 200px;
+    }
+    .el-select {
+      width: 200px;
+    }
+  }
+}
+>>> .el-scrollbar .el-scrollbar__wrap .el-scrollbar__view {
+  white-space: nowrap;
+}
